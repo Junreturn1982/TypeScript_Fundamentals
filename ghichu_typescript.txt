@@ -1,0 +1,2 @@
+http://www.typescriptlang.org/index.html
+http://michaelcrump.net/quick-tip-with-typescript-and-vscode/
