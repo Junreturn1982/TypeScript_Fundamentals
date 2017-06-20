@@ -1,2 +1,5 @@
-http://www.typescriptlang.org/index.html
+http://www.typescriptlang.org/index.
+https://typescript.codeplex.com/
+
+
 http://michaelcrump.net/quick-tip-with-typescript-and-vscode/
