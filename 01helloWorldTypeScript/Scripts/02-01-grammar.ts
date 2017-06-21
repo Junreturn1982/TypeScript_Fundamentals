@@ -1,5 +1,5 @@
 ﻿// namespace is the preferred keyword over module
-namespace demo_02_01 {
+module demo_02_01 {
     var x = 1;
 
     var y;
