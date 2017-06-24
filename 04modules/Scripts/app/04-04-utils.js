@@ -8,29 +8,26 @@ var App;
     };
     var Utils;
     (function (Utils) {
-        var Logger = (function () {
-            function Logger(mode) {
-                if (mode === void 0) { mode = App.LoggerMode.Console; }
+        class Logger {
+            constructor(mode = App.LoggerMode.Console) {
                 this.mode = mode;
                 switch (this.mode) {
                     case App.LoggerMode.Console:
-                        this.writer = function (msg) { return console.log(msg); };
+                        this.writer = (msg) => console.log(msg);
                         break;
                     case App.LoggerMode.Alert:
-                        this.writer = function (msg) { return alert(msg); };
+                        this.writer = (msg) => alert(msg);
                         break;
                     case App.LoggerMode.Toastr:
-                        this.writer = function (msg) { return toastr.info(msg); };
+                        this.writer = (msg) => toastr.info(msg);
                         break;
                 }
             }
-            Logger.prototype.write = function (msg) {
+            write(msg) {
                 this.writer(msg);
-            };
+            }
             ;
-            return Logger;
-        })();
+        }
         Utils.Logger = Logger;
     })(Utils = App.Utils || (App.Utils = {}));
 })(App || (App = {}));
-//# sourceMappingURL=04-04-utils.js.map
