@@ -1,4 +1,4 @@
-/// <reference path="../typings/toastr.d.ts"/>
+// <reference path="../typings/toastr.d.ts"/>
 /// <reference path="./04b5-dataservice.ts"/>
 /// <reference path="./04-04-utils.ts" />
 interface IAlerter{
@@ -17,6 +17,6 @@ class Alerter implements IAlerter {
         let msg = dataservice.getMessage();
         console.log(msg + ' ' + this.name);
         log.write(msg);
-        // toastr.info(msg)
+        toastr.info(this.name)
     }
 }
